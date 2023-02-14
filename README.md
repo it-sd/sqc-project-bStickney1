@@ -1,7 +1,7 @@
 # ShredTube
 Brent Stickney
 
-[My Website](https://snowboading-videos.onrender.com)
+[My Website](https://shredtube.onrender.com)
 
 ShredTube is a site that has snowboarding videos to watch.
 Users can like, dislike, favorite, and share each video.
