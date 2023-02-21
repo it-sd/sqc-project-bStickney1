@@ -19,3 +19,4 @@ and **likes** for the amount of likes it received.
 ## Initial Designs ##
 - ![layout](./images/layout.jpg)
 - ![site map](./images/siteMap.jpg)
+- ![tables](./images/tables.png)
