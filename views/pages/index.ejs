@@ -28,11 +28,23 @@
 	</header>
 
 	<div id="video">
-		<p>YouTube Video Here</p>
+			<%_ for (const video of videos) { _%>
+				<%_ if(video.duration) { _%>
+				<%_ let minutes = Math.floor(video.duration / 60) _%>
+				<%_ let extraSeconds = video.duration % 60 _%>
+				<%_ minutes = minutes < 10 ? "0" + minutes : minutes; _%>
+				<%_ extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds; _%>
+				<%_ let final = minutes + " : " + extraSeconds _%>
+				<%= console.log(video.title) %>
+				<h2 id="videoTitle"><%= video.title %> </h2>
+				<span id="duration"><%= final %></span>
+				<%_ } _%>
+			<%_ } _%>
 	</div>
 
 	<div id="buttons">
-		<p>Buttons Here</p>
+		<button id="likeButton" class="button">Like</button>
+		<button id="dislikeButton" class="button">Disike</button>
 	</div>
 
 	<div id="spotify">
