@@ -28,6 +28,21 @@ ul > li {
 	text-decoration: none;
 }
 
+#searchBox {
+  padding: 6px;
+  border: none;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+
+#searchButton {
+	font-size: 15px;
+}
+
+#searchH2 {
+	margin-top: 50px;
+}
+
 #video {
 	max-width: 100%;
 	max-height: 100%;
@@ -114,4 +129,27 @@ ul > li {
 	display: block;
 	margin: auto;
 	padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #searchBox {
+    display: flex;
+		justify-content: center;
+		align-items: flex-start;
+    text-align: center;
+    width:75%;
+    margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+    padding: 14px;
+		font-size: 20px;
+  }
+
+	#searchBtn {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 25px;
+	}
 }

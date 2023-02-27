@@ -59,4 +59,40 @@ describe('video server', function () {
       shouldHave(this.results, 'duration')
     })
   })
+
+  describe("POST '/search'", function () {
+    const url = new URL('/search', baseUrl)
+
+    it('should accept a search value', async function () {
+      const searchBox = 'test search'
+
+      const data = {
+        searchBox: searchBox.value
+      }
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      expect(response.ok).toBeTrue()
+    })
+
+    it('should not accept an empty search value', async function () {
+      const data = {
+        searchBox: ""
+      }
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      expect(response.ok).toBeFalse()
+    })
+  })
 })

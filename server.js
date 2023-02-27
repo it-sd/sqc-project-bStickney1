@@ -15,15 +15,13 @@ const pool = new Pool({
 const query = async function (sql, params) {
   let client
   let results = []
-  try {
-    client = await pool.connect()
-    const response = await client.query(sql, params)
-    if (response && response.rows) {
-      results = response.rows
-    }
-  } catch (err) {
-    console.error(err)
+
+  client = await pool.connect()
+  const response = await client.query(sql, params)
+  if (response && response.rows) {
+    results = response.rows
   }
+
   if (client) client.release()
   return results
 }
@@ -64,5 +62,21 @@ express()
 
     }
     res.render('pages/about', ejsData)
+  })
+  .get('/search', function (req, res) {
+    const ejsData = {
+
+    }
+    res.render('pages/search', ejsData)
+  })
+  .post('/search', async function (req, res) {
+    res.set({ 'Content-Type': 'application/json' })
+
+    if (req.body.searchBox !== "") {
+      res.json({ ok: true })
+    } else {
+      res.status(400).json({ ok: false })
+    }
+
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))

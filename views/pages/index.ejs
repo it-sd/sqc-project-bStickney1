@@ -24,6 +24,8 @@
 			<li><a class="links" href="">Popular</a></li>
 			<li>|</li>
 			<li><a class="links" href="">Favorites</a></li>
+			<li>|</li>
+			<li><a class="links" href="/search">Search</a></li>
 		</ul>
 	</header>
 
@@ -35,7 +37,6 @@
 				<%_ minutes = minutes < 10 ? "0" + minutes : minutes; _%>
 				<%_ extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds; _%>
 				<%_ let final = minutes + " : " + extraSeconds _%>
-				<%= console.log(video.title) %>
 				<h2 id="videoTitle"><%= video.title %> </h2>
 				<span id="duration"><%= final %></span>
 				<%_ } _%>
