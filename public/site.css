@@ -3,6 +3,7 @@ body {
 	max-height: 100%;
 	text-align: center;
 	background: linear-gradient(to top, #ffffff, #e7e6e7, #cfcece, #b8b6b7, #a19f9f) no-repeat center center fixed;
+	font-family: Arial;
 }
 
 #shredTube, :visited{
