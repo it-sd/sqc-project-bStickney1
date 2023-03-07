@@ -132,7 +132,7 @@ ul > li {
 	padding: 20px;
 }
 
-/* TODO: Account page */
+/* Account page */
 /* .accountDiv {
 	display: block;
 	margin: auto;
@@ -158,7 +158,7 @@ ul > li {
 	position: relative;
 	display: block;
 	bottom: -300px;
-}
+} */
 
  #login, #loggedin {
 	display: none;
@@ -182,7 +182,7 @@ ul > li {
   background-color: #0d4e0d;
 }
 
-#tokenBtn {
+/* #tokenBtn {
 	
 } */
 
