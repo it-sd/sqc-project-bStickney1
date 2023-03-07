@@ -82,7 +82,7 @@ describe('video server', function () {
 
     it('should not accept an empty search value', async function () {
       const data = {
-        searchBox: ""
+        searchBox: ''
       }
       const response = await fetch(url, {
         method: 'POST',
