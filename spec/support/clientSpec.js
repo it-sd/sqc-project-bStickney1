@@ -1,7 +1,6 @@
 const { Builder, By } = require('selenium-webdriver')
 
 describe('client', function () {
-  
   describe('account', function () {
     const baseUrl = 'http://localhost:5163/account'
     let driver
@@ -15,7 +14,6 @@ describe('client', function () {
       await driver.quit()
     })
 
-     // TODO: Make tests
-
+    // TODO: Make tests
   })
 })

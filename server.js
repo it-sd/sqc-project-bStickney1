@@ -135,6 +135,7 @@ express()
           grant_type: 'authorization_code'
         },
         headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
           Authorization: 'Basic ' + (new Buffer.from(process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET).toString('base64'))
         },
         json: true
@@ -172,7 +173,7 @@ express()
     const refresh_token = req.query.refresh_token
     const authOptions = {
       url: 'https://accounts.spotify.com/api/token',
-      headers: { Authorization: 'Basic ' + (new Buffer.from(process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET).toString('base64')) },
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', Authorization: 'Basic ' + (new Buffer.from(process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET).toString('base64')) },
       form: {
         grant_type: 'refresh_token',
         refresh_token
