@@ -29,7 +29,22 @@
 		</ul>
 	</header>
 
-  <div id="colorChanger">
+  <div>
+		<button class="button" onclick="hideColorChanger()">Change Background?</button>
+	</div>
+
+<script>
+function hideColorChanger() {
+  var x = document.getElementById("colorChanger");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+	<div id="colorChanger" style="display: none">
 		<h2>Background Color Changer</h2>
 		<label for="red">RED </label>
 		<input id="r" type="range" min="0" max="255">
