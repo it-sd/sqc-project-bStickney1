@@ -1,0 +1,221 @@
+body {
+	max-width: 100%;
+	max-height: 100%;
+	text-align: center;
+	background: linear-gradient(to top, #ffffff, #e7e6e7, #cfcece, #b8b6b7, #a19f9f) no-repeat center center fixed;
+	font-family: Arial;
+}
+
+#shredTube, :visited{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+ul > li {
+	padding: 5px;
+	display: inline;
+}
+
+.mainNav {
+	display: inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.links {
+	text-decoration: none;
+}
+
+#searchBox {
+  padding: 6px;
+  border: none;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+
+#searchButton {
+	font-size: 15px;
+}
+
+#searchH2 {
+	margin-top: 50px;
+}
+
+#video {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	width: 500px;
+	height: 400px;
+	border: 1px solid black;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#colorChanger {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	width: 500px;
+	border: 1px solid black;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+#videoTitle{
+	position: relative;
+	top: -180px;
+	left: 5%;
+}
+
+#duration {
+	position: relative;
+	bottom: -190px;
+	right: -25%;
+
+}
+
+#buttons {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+	margin-top: 2px;
+	border: 1px solid black;
+	height: 25px;
+	width: 500px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	margin: 15px;
+}
+
+#spotify {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	height: 50px;
+	width: 500px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#googleMaps {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 500px;
+	height: 400px;
+	border: 1px solid black;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#about {
+	margin: auto;
+	text-align: center;
+	max-width: 50%;
+}
+
+#aboutDiv {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: auto;
+	padding: 20px;
+}
+
+/* Account page */
+/* .accountDiv {
+	display: block;
+	margin: auto;
+	padding: 20px;
+}
+
+#user-profile {
+	display: block;
+}
+
+.media {
+	float: left;
+}
+
+.media-body {
+	float: right;
+	position: absolute;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#oauth {
+	position: relative;
+	display: block;
+	bottom: -300px;
+} */
+
+ #login, #loggedin {
+	display: none;
+}
+
+ .text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 500px;
+}
+
+.loginBtn {
+	background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.loginBtn:hover {
+  background-color: #0d4e0d;
+}
+
+/* #tokenBtn {
+	
+} */
+
+@media screen and (max-width: 600px) {
+  #searchBox {
+    display: flex;
+		justify-content: center;
+		align-items: flex-start;
+    text-align: center;
+    width:75%;
+    margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+    padding: 14px;
+		font-size: 20px;
+  }
+
+	#searchBtn {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 25px;
+	}
+}
