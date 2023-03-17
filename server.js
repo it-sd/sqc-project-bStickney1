@@ -155,7 +155,7 @@ express()
             console.log(body)
           })
 
-          res.redirect('/callback#' +
+          res.redirect('/account#' +
             querystring.stringify({
               access_token,
               refresh_token
