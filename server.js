@@ -121,7 +121,7 @@ express()
     const storedState = req.cookies ? req.cookies[stateKey] : null
 
     if (state === null || state !== storedState) {
-      res.redirect('/#' +
+      res.redirect('/account#' +
         querystring.stringify({
           error: 'state_mismatch'
         }))
