@@ -148,34 +148,6 @@ ul > li {
 	padding: 20px;
 }
 
-/* Account page */
-/* .accountDiv {
-	display: block;
-	margin: auto;
-	padding: 20px;
-}
-
-#user-profile {
-	display: block;
-}
-
-.media {
-	float: left;
-}
-
-.media-body {
-	float: right;
-	position: absolute;
-	margin: 0 auto;
-	text-align: left;
-}
-
-#oauth {
-	position: relative;
-	display: block;
-	bottom: -300px;
-} */
-
  #login, #loggedin {
 	display: none;
 }
@@ -192,15 +164,13 @@ ul > li {
   color: white;
   padding: 15px 25px;
   text-decoration: none;
+	position: relative;
+	top: 40px;
 }
 
 .loginBtn:hover {
   background-color: #0d4e0d;
 }
-
-/* #tokenBtn {
-	
-} */
 
 @media screen and (max-width: 600px) {
   #searchBox {
