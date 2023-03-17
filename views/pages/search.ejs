@@ -9,9 +9,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="stylesheet" href="/site.css">
-	<title>ShredTube - About</title>
+	<title>ShredTube - Search</title>
 </head>
-<body>
+
+<body id="body">
 	<header>
 		<h1><a id="shredTube" href="/">ShredTube</a></h1>
 		<ul class="mainNav">
@@ -64,18 +65,17 @@ function hideColorChanger() {
   <input id="searchBox" type="search" placeholder="Search">
   <button id="searchBtn" type="submit">Search</button>
 
-  <h2 id="searchH2">Please enter a search request</h2>
+  <h1 id="searchH1">Please enter a search request</h1>
 
 <script>
   
   const searchBox = document.getElementById('searchBox')
   const searchBtn = document.getElementById('searchBtn')
-  const h2 = document.querySelector('h2')
+  const h2 = document.getElementById('searchH1')
 
   searchBox.value = ""
   
   const submit = async function () {
-  // Your code here //////////////////////////////////////////
   const data = {
     searchBox: searchBox.value
   }

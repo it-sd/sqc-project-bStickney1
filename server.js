@@ -191,3 +191,8 @@ express()
     })
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
+
+module.exports = {
+  generateRandomString,
+  queryAllVideos
+}

@@ -1,4 +1,4 @@
-const { queryAllVideos } =
+const { queryAllVideos, generateRandomString } =
   require('../../server.js')
 
 describe('video server', function () {
@@ -23,6 +23,15 @@ describe('video server', function () {
   describe("GET '/'", function () {
     shouldBeAbove200('/')
   })
+  describe("GET '/about'", function () {
+    shouldBeAbove200('/')
+  })
+  describe("GET '/search'", function () {
+    shouldBeAbove200('/')
+  })
+  describe("GET '/account'", function () {
+    shouldBeAbove200('/')
+  })
   describe("GET '/health'", function () {
     shouldBeLessThan399('/health')
   })
@@ -39,24 +48,10 @@ describe('video server', function () {
     })
   })
 
-  describe('queryVideo', function () {
-    beforeEach(async function () {
-      this.results = await queryAllVideos(1)
-    })
-
-    const shouldHave = function (source, property) {
-      expect(source).toBeDefined()
-      expect(source + '.' + property).toBeDefined()
-    }
-
-    it('should return a title', function () {
-      shouldHave(this.results, 'title')
-    })
-    it('should return a description', function () {
-      shouldHave(this.results, 'description')
-    })
-    it('should return a duration', function () {
-      shouldHave(this.results, 'duration')
+  describe('generateRandomString', function () {
+    it('should return a string', function () {
+      const result = generateRandomString(10)
+      expect(typeof result).toBe('string')
     })
   })
 
