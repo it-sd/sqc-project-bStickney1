@@ -72,6 +72,9 @@ function hideColorChanger() {
 				<%_ extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds; _%>
 				<%_ let final = minutes + " : " + extraSeconds _%>
 				<h2 id="videoTitle"><%= video.title %> </h2>
+
+				<iframe id="youtubeVideo" width="490" height="315" src="https://www.youtube.com/embed/fpXO05m2AEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				
 				<span id="duration"><%= final %></span>
 				<%_ } _%>
 			<%_ } _%>

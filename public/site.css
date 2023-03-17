@@ -75,10 +75,15 @@ ul > li {
 	left: 5%;
 }
 
+#youtubeVideo {
+	position: absolute;
+
+}
+
 #duration {
 	position: relative;
-	bottom: -190px;
-	right: -25%;
+	bottom: -180px;
+	right: -20%;
 
 }
 

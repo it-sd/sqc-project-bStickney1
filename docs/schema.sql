@@ -19,4 +19,4 @@ CREATE TABLE likes (
 
 INSERT INTO videos (title, description, duration)
   VALUES 
-  ('Test Video Title', 'Test description of the video', 120);
+  ('Test YouTube Video', 'Test description of the video', 91);
